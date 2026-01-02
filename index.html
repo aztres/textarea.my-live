@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading My Notes...</title>
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .loader {
+      text-align: center;
+    }
+    .spinner {
+      border: 3px solid #333;
+      border-top: 3px solid #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <div class="spinner"></div>
+    <div>Loading latest note...</div>
+  </div>
+  <script>
+    // CONFIGURATION - Update this URL whenever your content changes
+    const LATEST_URL = 'https://textarea.my/#TVDLTsMwELz7K6bqmQBNOTQ3aCtAohWqAjmbdtus4tqRvW2UH-ADOPMBfFe_BNUJj9tqdmd2ZoZ4JR_YWaS4QE5B2O7wx2JarGjDntaiVF5yAAdIScgfHlczHHuW20bQOqFEqeEQhfPV1rgmamXqOsHUkxbagC0La4O1s0JWcHr_wD1Z8nG7ZR8EL6snNfqjdD5C6bzAsK0yvLEkpr0cT6pqNlqoNMHSNTjUGx2N_9cu2BjsSLCcF1F4nHRYvKZe3PchIQ61YxsHOee11ETaTYLn0llCcyZr0-g24BAIQe-pNxTdDZTKeU9B9L7OMMnSK9wuMJ3nSp0-vxBLrL07Ulfk7-fmp7LzEAbqGw==';
+    
+    // Redirect immediately
+    window.location.replace(LATEST_URL);
+  </script>
+</body>
+</html>
